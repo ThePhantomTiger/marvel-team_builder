@@ -1,0 +1,28 @@
+.navbar{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.0);
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    font-size:1em;
+
+    z-index: 10000;
+}
+
+.navbar__title{
+    color:white;
+    font-family: sans-serif;
+}
+
+.navbar--scrolled{
+    background-color: rgba(0, 0, 0, 1);
+
+}

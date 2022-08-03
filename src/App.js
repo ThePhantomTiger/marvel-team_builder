@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/NabBar';
+import Hero from './components/Hero';
+import CharacterSelector from './components/CharacterSelector';
+
+import { useState } from 'react';
+import TeamDisplayer from './components/TeamDisplayer';
 
 function App() {
+
+  const [team, setTeam] = useState([]);
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <Hero />
+      <CharacterSelector team={team} setTeam={setTeam} />
+      <TeamDisplayer team={team} setTeam={setTeam} />
     </div>
   );
 }

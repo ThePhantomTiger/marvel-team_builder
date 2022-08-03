@@ -1,0 +1,53 @@
+.memberDisplayer{
+
+
+    padding: 0px 10% 0px 10%;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(0.1, 0.1, 0.1, 0.2);
+    padding: 20px;
+    max-width: 600px;
+}
+
+.memberDisplayer * {
+    margin: 10px;
+}
+
+
+
+.memberDisplayer--alt1{
+    
+}
+
+.memberDisplayer__textarea{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.memberDisplayer__textarea button{
+    background-color: inherit;
+    border: 1px solid white;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transition: all 0.1s;
+    color: white;
+    height: 3rem;
+    width: 15rem;
+    font-size: 1rem;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -ms-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    cursor: pointer;
+}
+
+.memberDisplayer__textarea button:hover{
+    background-color: rgba(200, 0, 0, 0.5);
+}
+
+.memberDisplayer__textarea p{
+}

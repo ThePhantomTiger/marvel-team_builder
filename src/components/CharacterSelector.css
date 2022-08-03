@@ -1,0 +1,43 @@
+.characterSelector{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 50px;
+
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+
+
+}
+
+.characterSelectorContainer {
+    position: relative;
+}
+
+.characterSelectorContainer h1{
+    text-align: center;
+    color: rgb(204, 204, 204);
+    padding-top: 50px;
+}
+
+
+.characterSelector button {
+    width: 40px;
+    height: 40px;
+    color: white;
+    font-weight:bold;
+    background-color: rgb(41, 41, 41);
+    border:none;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+}
+
+.characterSelector button:hover{
+    background-color: rgb(45,45,45);
+    cursor: pointer;
+}

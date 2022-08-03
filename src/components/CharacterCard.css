@@ -1,0 +1,88 @@
+.characterCard{
+    min-width: 250px;
+    min-height: 400px;
+    width: 2px;
+    height: 400px;
+    background-color: white;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.1s ;
+    -webkit-transition: all 0.1s ;
+    -moz-transition: all 0.1s ;
+    -ms-transition: all 0.1s ;
+    -o-transition: all 0.1s ;
+    overflow: hidden;
+    cursor: pointer;
+
+    box-shadow: 1px 1px 1px 1px;
+
+    position: relative;
+}
+
+.characterCard:hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+}
+
+.characterCard__loadingDiv{
+
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-90deg,#ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 800% 800%;
+    animation: gradient 2s ease infinite;
+    -webkit-animation: gradient 2s ease infinite;
+    opacity: 100%;
+    z-index: 5;
+}
+
+.characterCard__loadingDiv--active {
+    display: block;
+}
+
+.characterCard--loading{
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+}
+
+
+.characterCard__textinfo{
+    height: 100%;
+}
+
+.characterCard__textinfo p{
+
+}
+
+.characterCard__textinfo {
+    overflow: hidden;
+
+}
+
+.characterCard img{
+    max-height: 70%;
+    object-fit: contain;
+    background-color: black;
+
+}
