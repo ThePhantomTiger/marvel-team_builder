@@ -20,7 +20,7 @@
     cursor: pointer;
 
     box-shadow: 1px 1px 1px 1px;
-
+    border: 1px solid rgb(91, 75, 75);
     position: relative;
 }
 
@@ -75,8 +75,13 @@
 
 }
 
+.characterCard__textinfo h2{
+    font-size: 1.2rem;
+}
+
 .characterCard__textinfo {
     overflow: hidden;
+    padding: 10px;
 
 }
 
